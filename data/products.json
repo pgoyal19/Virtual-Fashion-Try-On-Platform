@@ -1,0 +1,37 @@
+{
+    "products": [
+        {
+            "name": "Classic White T-Shirt",
+            "description": "Premium cotton t-shirt for everyday wear",
+            "price": 29.99,
+            "images": ["https://via.placeholder.com/800x1200?text=T-Shirt-White"],
+            "category": "Tops",
+            "sizes": ["S", "M", "L", "XL"],
+            "colors": ["White", "Black"],
+            "trending": true,
+            "modelData": "sample-3d-model-data"
+        },
+        {
+            "name": "Slim Fit Jeans",
+            "description": "Comfortable slim fit denim jeans",
+            "price": 49.99,
+            "images": ["https://via.placeholder.com/800x1200?text=Jeans-Blue"],
+            "category": "Bottoms",
+            "sizes": ["28", "30", "32", "34"],
+            "colors": ["Blue", "Black"],
+            "trending": true,
+            "modelData": "sample-3d-model-data"
+        },
+        {
+            "name": "Casual Hoodie",
+            "description": "Warm and comfortable hoodie for casual wear",
+            "price": 39.99,
+            "images": ["https://via.placeholder.com/800x1200?text=Hoodie-Gray"],
+            "category": "Tops",
+            "sizes": ["S", "M", "L", "XL"],
+            "colors": ["Gray", "Black", "Navy"],
+            "trending": true,
+            "modelData": "sample-3d-model-data"
+        }
+    ]
+} 

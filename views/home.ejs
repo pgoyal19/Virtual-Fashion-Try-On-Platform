@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Fashion Try-On</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <%- include('partials/header') %>
+    
+    <main>
+        <section class="hero">
+            <h1>Experience Fashion in a New Way</h1>
+            <p>Try clothes virtually before you buy</p>
+            <a href="/tryon" class="cta-button">Try Now</a>
+        </section>
+
+        <section class="trending">
+            <h2>Trending Outfits</h2>
+            <div class="outfit-grid">
+                <% trendingOutfits.forEach(outfit => { %>
+                    <div class="outfit-card">
+                        <img src="<%= outfit.images[0] %>" alt="<%= outfit.name %>">
+                        <h3><%= outfit.name %></h3>
+                        <p class="price">$<%= outfit.price %></p>
+                        <button onclick="tryOn('<%= outfit._id %>')" class="try-on-btn">Try On</button>
+                    </div>
+                <% }) %>
+            </div>
+        </section>
+
+        <section class="featured-collections">
+            <h2>Featured Collections</h2>
+            <div class="collection-grid">
+                <% featuredCollections.forEach(collection => { %>
+                    <div class="collection-card">
+                        <img src="<%= collection.coverImage %>" alt="<%= collection.name %>">
+                        <h3><%= collection.name %></h3>
+                        <p><%= collection.description %></p>
+                        <a href="/collection/<%= collection._id %>" class="view-collection">View Collection</a>
+                    </div>
+                <% }) %>
+            </div>
+        </section>
+    </main>
+
+    <%- include('partials/footer') %>
+    
+    <script src="/js/main.js"></script>
+</body>
+</html> 

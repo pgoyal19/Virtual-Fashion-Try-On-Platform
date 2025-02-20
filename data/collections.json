@@ -1,0 +1,25 @@
+{
+    "collections": [
+        {
+            "name": "Summer Essentials",
+            "description": "Must-have pieces for summer",
+            "coverImage": "https://via.placeholder.com/1200x800?text=Summer+Collection",
+            "featured": true,
+            "products": []
+        },
+        {
+            "name": "Winter Collection",
+            "description": "Stay warm and stylish",
+            "coverImage": "/images/Winter_coll1.jpeg",
+            "featured": true,
+            "products": []
+        },
+        {
+            "name": "Casual Wear",
+            "description": "Comfortable everyday clothing",
+            "coverImage": "/images/Winter_coll1.jpeg",
+            "featured": true,
+            "products": []
+        }
+    ]
+} 
